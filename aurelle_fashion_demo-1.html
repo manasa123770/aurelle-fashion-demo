@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AURELLE | Everyday Elegance</title>
+<meta name="description" content="Discover timeless women's fashion at AURELLE. Elegant styles for everyday moments.">
+<style>
+:root{--ink:#24211f;--cream:#f8f5ef;--sand:#e9dfd2;--rose:#b87970;--muted:#766e66;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}
+.announcement{text-align:center;background:#292522;color:#fff;padding:10px;font-size:11px;letter-spacing:2px}
+header{height:76px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;background:rgba(248,245,239,.96);position:sticky;top:0;z-index:10;border-bottom:1px solid #e8e0d6}
+.logo{font-family:Georgia,serif;font-size:28px;letter-spacing:5px}.logo small{display:block;font:9px Arial,sans-serif;letter-spacing:4px;text-align:center;margin-top:2px}
+nav{display:flex;gap:27px;font-size:12px;letter-spacing:1px;text-transform:uppercase}.header-actions{display:flex;gap:18px;align-items:center;font-size:13px}.cart-pill{background:#292522;color:white;border-radius:50%;min-width:23px;height:23px;display:inline-flex;align-items:center;justify-content:center;font-size:11px;margin-left:4px}
+.hero{min-height:540px;display:grid;grid-template-columns:1fr 1fr;background:#e8ddd0}.hero-copy{padding:70px 8%;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}.eyebrow{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--rose);font-weight:bold}.hero h1{font:clamp(44px,5.8vw,76px)/.98 Georgia,serif;font-weight:normal;margin:20px 0}.hero p{max-width:360px;line-height:1.8;color:#665d55;font-size:14px}.btn{display:inline-block;background:#292522;color:white;padding:15px 25px;border:1px solid #292522;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;margin-top:18px;transition:.2s}.btn:hover{background:var(--rose);border-color:var(--rose)}.hero-image{min-height:450px;background:linear-gradient(0deg,rgba(0,0,0,.04),rgba(0,0,0,0)),url('https://images.unsplash.com/photo-153910 вер?auto=format&fit=crop&w=1400&q=85') center 30%/cover}
+.hero-image{background-image:url('https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1400&q=85')}
+.trust{display:flex;justify-content:center;gap:55px;padding:22px 15px;background:#fff;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#655d55;flex-wrap:wrap}
+section{padding:68px 6%}.section-head{text-align:center;margin-bottom:34px}.section-head .eyebrow{color:var(--rose)}h2{font:normal clamp(30px,4vw,44px) Georgia,serif;margin:12px 0}.section-head p{font-size:13px;color:var(--muted)}
+.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.category{height:310px;position:relative;overflow:hidden;background:#ddd}.category img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.category:hover img{transform:scale(1.04)}.category-label{position:absolute;bottom:18px;left:18px;background:rgba(248,245,239,.94);padding:15px 18px;min-width:145px}.category-label strong{font:22px Georgia,serif;display:block;font-weight:normal}.category-label span{font-size:10px;letter-spacing:1px;text-transform:uppercase;display:block;margin-top:7px}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product{min-width:0}.product-photo{position:relative;aspect-ratio:3/4;background:#e9e1d7;overflow:hidden}.product-photo img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.product:hover img{transform:scale(1.035)}.tag{position:absolute;top:12px;left:12px;background:#fff;padding:7px 9px;font-size:9px;letter-spacing:1px;text-transform:uppercase}.quick-add{position:absolute;bottom:0;left:0;right:0;border:0;background:rgba(41,37,34,.94);color:#fff;padding:13px;font-size:10px;letter-spacing:1px;text-transform:uppercase}.product-info{padding:13px 2px}.product-info h3{font:18px Georgia,serif;font-weight:normal;margin:0 0 8px}.product-info p{font-size:12px;color:var(--muted);margin:0 0 8px}.price{font-size:13px;font-weight:bold}.old-price{text-decoration:line-through;color:#9d948a;font-weight:normal;margin-left:7px}
+.story{background:#e9dfd2;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:50px}.story img{width:100%;max-height:450px;object-fit:cover}.story-copy p{color:#655d55;font-size:14px;line-height:1.9;max-width:440px}.newsletter{text-align:center;background:#f1eae1}.newsletter p{font-size:13px;color:var(--muted)}.newsletter-form{display:flex;max-width:440px;margin:24px auto 0}.newsletter-form input{flex:1;min-width:0;padding:14px;border:1px solid #d8cfc4;background:#fff}.newsletter-form button{margin:0;border:0}
+footer{background:#292522;color:#f8f5ef;padding:44px 6% 25px}.footer-top{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}.footer-brand p{color:#c9beb3;max-width:300px;font-size:12px;line-height:1.8}.footer-links{display:flex;gap:24px;flex-wrap:wrap;font-size:11px;color:#e4d9cf}.copyright{border-top:1px solid #4a433d;margin-top:30px;padding-top:18px;font-size:10px;color:#bdb2a8;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.notice{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:#292522;color:white;padding:14px 20px;border-radius:3px;font-size:12px;display:none;z-index:20;box-shadow:0 6px 24px #0002}
+@media(max-width:800px){header{padding:0 4%;height:68px}.logo{font-size:22px;letter-spacing:3px}nav{gap:12px;font-size:10px}.header-actions .account{display:none}.hero{grid-template-columns:1fr}.hero-copy{padding:55px 7%}.hero-image{min-height:380px}.trust{gap:18px;font-size:9px}.categories{gap:10px}.category{height:230px}.category-label{left:9px;bottom:9px;padding:10px}.category-label strong{font-size:18px}.products{grid-template-columns:repeat(2,1fr);gap:22px 12px}.story{grid-template-columns:1fr;gap:25px}.story-copy{order:-1}.story img{max-height:360px}section{padding:50px 5%}}
+@media(max-width:480px){nav{display:none}.hero h1{font-size:50px}.hero-image{min-height:330px}.categories{grid-template-columns:1fr}.category{height:330px}.trust{display:grid;grid-template-columns:1fr 1fr;text-align:center}.header-actions{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="announcement">COMPLIMENTARY SHIPPING ON ORDERS OVER ₹1,999 · DEMO STORE</div>
+<header>
+  <a class="logo" href="#home">AURELLE<small>EVERYDAY ELEGANCE</small></a>
+  <nav><a href="#new">New In</a><a href="#categories">Collections</a><a href="#story">Our Story</a></nav>
+  <div class="header-actions"><a class="account" href="#newsletter">Join Us</a><a href="#new">Bag <span class="cart-pill" id="cart-count">0</span></a></div>
+</header>
+<main>
+<section class="hero" id="home" style="padding:0">
+  <div class="hero-copy"><span class="eyebrow">The new season edit</span><h1>Style that<br>feels like you.</h1><p>Thoughtfully chosen pieces, timeless silhouettes, and little details that make every day feel special.</p><a class="btn" href="#new">Discover the collection&nbsp; ↗</a></div>
+  <div class="hero-image" role="img" aria-label="Fashion editorial featuring an elegant outfit"></div>
+</section>
+<div class="trust"><span>✦ Thoughtful styles</span><span>✦ Easy everyday elegance</span><span>✦ Made for your moments</span></div>
+<section id="categories">
+  <div class="section-head"><span class="eyebrow">Find your mood</span><h2>Shop the collections</h2><p>Pieces to make getting dressed feel effortless.</p></div>
+  <div class="categories">
+    <a class="category" href="#new"><img loading="lazy" src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80" alt="Elegant accessories"><div class="category-label"><strong>Accessories</strong><span>Little details ↗</span></div></a>
+    <a class="category" href="#new"><img loading="lazy" src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=80" alt="Women's fashion"><div class="category-label"><strong>New Season</strong><span>Explore styles ↗</span></div></a>
+    <a class="category" href="#new"><img loading="lazy" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80" alt="Friends shopping for clothes"><div class="category-label"><strong>Everyday Edit</strong><span>Wear on repeat ↗</span></div></a>
+  </div>
+</section>
+<section id="new" style="background:#fff">
+  <div class="section-head"><span class="eyebrow">Curated for you</span><h2>Customer favourites</h2><p>Meet the pieces you'll reach for again and again.</p></div>
+  <div class="products">
+    <article class="product"><div class="product-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=700&q=85" alt="Neutral outfit"><span class="tag">Bestseller</span><button class="quick-add" data-name="The Everyday Set">Add to bag +</button></div><div class="product-info"><h3>The Everyday Set</h3><p>Soft neutrals · Relaxed fit</p><span class="price">₹1,499</span></div></article>
+    <article class="product"><div class="product-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=700&q=85" alt="Classic outerwear"><span class="tag">New</span><button class="quick-add" data-name="The Classic Layer">Add to bag +</button></div><div class="product-info"><h3>The Classic Layer</h3><p>Everyday classic · Easy styling</p><span class="price">₹1,899</span></div></article>
+    <article class="product"><div class="product-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=85" alt="Modern casual fashion"><button class="quick-add" data-name="Weekend Mood">Add to bag +</button></div><div class="product-info"><h3>Weekend Mood</h3><p>Casual · Effortless</p><span class="price">₹1,199</span></div></article>
+    <article class="product"><div class="product-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=700&q=85" alt="Women's handbag"><span class="tag">Popular</span><button class="quick-add" data-name="The Day Bag">Add to bag +</button></div><div class="product-info"><h3>The Day Bag</h3><p>Minimal · Goes with everything</p><span class="price">₹999</span></div></article>
+  </div>
+</section>
+<section class="story" id="story">
+  <img loading="lazy" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1100&q=85" alt="Fashion and personal style">
+  <div class="story-copy"><span class="eyebrow">A little about us</span><h2>Less rush.<br>More you.</h2><p>At AURELLE, we believe personal style should feel joyful, comfortable, and entirely your own. Our collections are inspired by everyday confidence and the beauty of simple details.</p><p><em>Demo copy: replace this story with your client's real brand story before launch.</em></p><a class="btn" href="#new">Find your favourites</a></div>
+</section>
+<section class="newsletter" id="newsletter"><span class="eyebrow">Stay in the loop</span><h2>A little note from us.</h2><p>Get first looks at new arrivals and styling inspiration.</p><form class="newsletter-form" id="newsletter-form"><input type="email" placeholder="Your email address" aria-label="Your email address" required><button class="btn" type="submit">Join us</button></form><p style="font-size:10px;margin-top:14px">Demo form only — no email addresses are collected.</p></section>
+</main>
+<footer><div class="footer-top"><div class="footer-brand"><a class="logo" href="#home">AURELLE</a><p>Everyday elegance, thoughtfully curated. A sample fashion storefront created as a portfolio demo.</p></div><div class="footer-links"><a href="#new">Shop</a><a href="#story">Our Story</a><a href="#newsletter">Contact</a><a href="#home">Back to top ↑</a></div></div><div class="copyright"><span>© 2026 AURELLE DEMO STORE</span><span>Portfolio concept · Not a live checkout</span></div></footer>
+<div class="notice" id="notice" role="status"></div>
+<script>
+let count=0;const countEl=document.getElementById('cart-count');const notice=document.getElementById('notice');let noticeTimer;
+function showNotice(message){notice.textContent=message;notice.style.display='block';clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>notice.style.display='none',2600)}
+document.querySelectorAll('.quick-add').forEach(button=>button.addEventListener('click',()=>{count++;countEl.textContent=count;showNotice(button.dataset.name+' added to your demo bag!')}));
+document.getElementById('newsletter-form').addEventListener('submit',event=>{event.preventDefault();showNotice('Thanks! This demo form is not connected to email yet.');event.target.reset()});
+</script>
+</body>
+</html>
